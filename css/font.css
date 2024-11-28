@@ -1,0 +1,26 @@
+/* ------------------
+Font 
+------------------ */
+@font-face {
+    font-family: font-thin;
+    src: url("../fonts/Averta/AvertaStd-Thin.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: font-regular;
+    src: url("../fonts/Averta/AvertaStd-Regular.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: font-medium;
+    src: url("../fonts/Averta/AvertaStd-Semibold.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: font-bold;
+    src: url("../fonts/Averta/AvertaStd-Bold.otf");
+    font-display: swap;
+}

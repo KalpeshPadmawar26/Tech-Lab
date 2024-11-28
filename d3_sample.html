@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function () {
+
+var options = {
+	subtitles: [{
+		text: "Today's Attendance"
+	}],
+	animationEnabled: true,
+	data: [{
+		type: "pie",
+		startAngle: 270,
+		toolTipContent: "<b>{label}</b>: {y}",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 13,
+		indexLabel: "{label} - {y}",
+		dataPoints: [
+			{ y: 100, label: "Attended Students"},
+			{ y: 2, label: "Absent Students", exploded: true },
+		]
+	}]
+};
+$("#chartContainer").CanvasJSChart(options);
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 200px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+</body>
+</html>

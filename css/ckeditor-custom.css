@@ -1,0 +1,234 @@
+/* // Ckeditor 5 custom css >>>> */
+:root {
+    --ck-border-radius: 0.5rem !important;
+    --ck-font-face: var(--font-regular) !important;
+    --ck-color-panel-border: var(--border-color) !important;
+    --ck-color-base-border: var(--border-color) !important;
+    --ck-color-labeled-field-label-background: var(--background) !important;
+    --ck-color-focus-border: var(--light-black) !important;
+    --ck-color-tooltip-background: var(--background) !important;
+    --ck-color-tooltip-text: var(--white) !important;
+    --ck-color-focus-border: var(--light-black) !important;
+    --ck-focus-outer-shadow-geometry: 0 0 0 0px !important;
+    /* -- Overrides the Shadow >>>>>>>>>>>>>>>>>>>>>> */
+
+    /* -- The geometry of the of focused element's outer shadow. -- */
+    --ck-focus-outer-shadow-geometry: 0 0 0 0px !important;
+
+    /*--  A visual style of focused element's outer shadow. ---------------------- */
+    --ck-focus-outer-shadow: none !important;
+
+    /*--  A visual style of focused element's outer shadow (when disabled). ---------------------- */
+    --ck-focus-disabled-outer-shadow: none !important;
+
+    /*--  A visual style of focused element's outer shadow (when has errors). ---------------------- */
+    --ck-focus-error-outer-shadow: noe !important;
+
+    /*--  A visual style of focused element's border or outline. ---------------------- */
+    --ck-focus-ring: 1px solid var(--border-color) !important;
+}
+
+/* // Toolbar >>>> */
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    border-radius: 0.5rem !important;
+}
+
+.ck.ck-toolbar {
+    background: var(--white) !important;
+    border: none !important;
+    padding: 0 var(--gpx15) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ck-reset_all :not(.ck-reset_all-excluded *),
+.ck.ck-reset_all {
+    color: var(--black) !important;
+    /* font: normal normal normal var(--font-size-regular)/var(--ck-line-height-base) var(--font-regular) !important; */
+    font: normal normal normal var(--font-size-regular) var(--font-regular) !important;
+}
+
+.ck.ck-toolbar .ck.ck-toolbar__separator {
+    background: var(--border-color) !important;
+}
+
+.ck.ck-button:hover,
+a.ck.ck-button:hover {
+    background: var(--background) !important;
+}
+
+.ck.ck-button.ck-on,
+a.ck.ck-button.ck-on {
+    background: var(--background) !important;
+}
+
+.ck-rounded-corners .ck.ck-button,
+.ck-rounded-corners a.ck.ck-button,
+.ck.ck-button.ck-rounded-corners,
+a.ck.ck-button.ck-rounded-corners {
+    border-radius: 0.5rem !important;
+}
+
+.ck.ck-icon {
+    font-size: .6em !important;
+    height: var(--ck-icon-size);
+    width: var(--ck-icon-size);
+    will-change: transform;
+}
+
+.ck.ck-dropdown__panel {
+    background: var(--white) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: none !important;
+    padding: calc(var(--gpx15) + 2px) !important;
+}
+
+.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__panel .ck-list__item {
+    width: 100% !important;
+    min-width: auto !important;
+}
+
+.ck-rounded-corners .ck.ck-dropdown__panel,
+.ck.ck-dropdown__panel.ck-rounded-corners {
+    border-radius: 0.5rem !important;
+}
+
+.ck.ck-list__item {
+    margin-bottom: 0.5rem !important;
+}
+
+.ck.ck-list__item:last-child {
+    margin-bottom: 0rem !important;
+}
+
+.ck.ck-balloon-panel {
+    background: var(--white);
+    border: 1px solid var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+.ck.ck-balloon-panel .ck.ck-responsive-form {
+    padding: var(--gpx20) !important;
+}
+
+.ck-rounded-corners .ck.ck-balloon-panel,
+.ck.ck-balloon-panel.ck-rounded-corners {
+    border-radius: 0.5rem !important;
+}
+
+.ck.ck-labeled-field-view>.ck.ck-labeled-field-view__input-wrapper>.ck.ck-label {
+    border-radius: 0.5rem !important;
+}
+
+.ck.ck-responsive-form {
+    padding: 0 !important;
+}
+
+.ck-content {
+    padding: 10px;
+}
+
+.ck-content .table table {
+    border: 1px solid var(--border-color) !important;
+}
+
+tr {
+    border-bottom: 1px solid #FBFBFB;
+}
+
+.ck-content .table table td,
+.ck-content .table table th {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ck-content .table table td,
+.ck-content .table table th {
+    border: 1px solid var(--border-color) !important;
+}
+
+.ck-widget.table td.ck-editor__nested-editable.ck-editor__nested-editable_focused,
+.ck-widget.table td.ck-editor__nested-editable:focus,
+.ck-widget.table th.ck-editor__nested-editable.ck-editor__nested-editable_focused,
+.ck-widget.table th.ck-editor__nested-editable:focus {
+    background: var(--background) !important;
+    border-style: none;
+    outline: 1px solid var(--ck-color-focus-border);
+    outline-offset: -1px;
+}
+
+.ck .ck-editor__nested-editable.ck-editor__nested-editable_focused,
+.ck .ck-editor__nested-editable:focus {
+    background-color: var(--ck-color-widget-editable-focus-background);
+    border: var(--ck-focus-ring);
+    box-shadow: none !important;
+    outline: none;
+}
+
+/* // Textarea >>>> */
+.ck.ck-editor__editable_inline {
+    border: 1px solid transparent;
+    overflow: auto;
+    padding: 0 var(--ck-spacing-standard);
+    background: red !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+    border: none !important;
+}
+
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    background: var(--white) !important;
+    padding: var(--gpx10) var(--gpx15);
+    font-size: var(--font-size-regular);
+}
+
+.ck.ck-button.ck-switchbutton .ck-button__toggle {
+    cursor: pointer !important;
+    background: var(--white) !important;
+    border-radius: 10rem !important;
+    border: 1px solid var(--light-black) !important;
+    transition: background .3s ease-in-out !important;
+    width: 4.0rem !important;
+    height: 2.0rem !important;
+    position: relative !important;
+    border-radius: 10rem !important;
+    box-shadow: none !important;
+}
+
+.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle {
+    background: var(--primary) !important;
+}
+
+.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle:hover {
+    background: var(--primary) !important;
+}
+
+.ck.ck-button.ck-switchbutton .ck-button__toggle:hover {
+    background: var(--white) !important;
+}
+
+.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+    background: var(--border-color) !important;
+    border-radius: 9rem !important;
+    position: absolute;
+    top: 4.5px;
+    left: 5px;
+}
+
+.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle .ck-button__toggle__inner {
+    background: var(--white) !important;
+}
+
+.ck.ck-button.ck-switchbutton .ck-button__toggle:hover .ck-button__toggle__inner {
+    box-shadow: none !important;
+}
+
+.ck-focused {
+    border: none !important;
+}

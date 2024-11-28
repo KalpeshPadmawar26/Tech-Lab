@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5eb; /* Silent Cream */
+            color: #193441; /* Coleo (Dark Teal) */
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #13505b; /* Slightly darker teal for heading text */
+        }
+        .student-cards-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            margin: 10px; /* negative margin to counteract the margin added to .student-card */
+        }
+        .student-card {
+            width: 290px;
+            padding: 40px;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 5px; /* margin between cards */
+            background-color: rgba(255, 255, 255, 0.9); /* 30% transparent white */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .student-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .student-name {
+            font-weight: bold;
+        }
+        .department {
+            font-style: italic;
+            color: #666;
+        }
+	.clg {
+            font-style: italic;
+            color: #666;
+		font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guide: Prof. Pooja Bharvkar</h1>
+    <h2>Smt. Kashibai Navale College Of Engineering Pune</h2>
+    <h3>Year: 2023-2024</h3></br></br>
+    <div class="student-cards-container">
+        <div class="student-card">
+            <img src="images/team-3.jpg" alt="Student 1">
+            <div class="student-info">
+                <p class="student-name">Kalpesh Padmawar</p>
+                <p class="department">Computer Engineering</p>
+                <p class="clg">Smt.Kashibai Navale College Of Engineering Pune</p>
+
+            </div>
+        </div>
+
+        <div class="student-card">
+            <img src="images/team-2.jpg" alt="Student 2">
+            <div class="student-info">
+                <p class="student-name">Prathmesh Swami</p>
+                <p class="department">Computer Engineering</p>
+		<p class="clg">Smt.Kashibai Navale College Of Engineering Pune</p>
+            </div>
+        </div>
+
+        <div class="student-card">
+            <img src="images/team-4.jpg" alt="Student 3">
+            <div class="student-info">
+                <p class="student-name">Avishkar Jagtap</p>
+                <p class="department">Computer Engineering</p>
+		<p class="clg">Smt.Kashibai Navale College Of Engineering Pune</p>
+            </div>
+        </div>
+
+        <div class="student-card">
+            <img src="images/team-1.jpg" alt="Student 4">
+            <div class="student-info">
+                <p class="student-name">Kaivalya Kulkarni</p>
+                <p class="department">Computer Engineering</p>
+		<p class="clg">Smt.Kashibai Navale College Of Engineering Pune</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
